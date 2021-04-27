@@ -1,0 +1,122 @@
+@viewport {
+    width: device-width;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, img,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, textarea {
+	border: 0;
+	font-family: Arial;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: none;
+	padding: 0;
+	vertical-align: baseline;
+    -webkit-text-decoration-skip: none;
+}
+html {
+    
+}
+.button {
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #33A5EC;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bug_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cross {
+    position: absolute;
+    top: 23px;
+    right: 30px;
+    height: 20px;
+    width: 20px;
+    background-image: url(../img/cross.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.vform {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    width: 540px;
+    height: 300px;
+    background-color: #33A5EC;
+    border-radius: 10px;
+    padding: 0 30px;
+}
+.vform form p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 26px;
+    margin-bottom: 17px;
+}
+.vform form textarea {
+    width: 528px;
+    height: 108px;
+    resize: none;
+    padding: 5px 5px;
+    border: 1px solid #2E3192;
+}
+.vform form input[type="file"] {
+    margin-top: 17px;
+}
+.vform form input[type="submit"], .thnx span {
+    margin: 20px auto 0;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #2E3192;
+    border: none;
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+}
+.cop {
+    font-size: 10px;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    margin-top: 6px;
+}
+.thnx {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.thnx p {
+    margin: 127px 0 86px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.thnx span {
+    text-align: center;
+    padding-top: 6px;
+    height: 24px;
+    font-size: 18px;
+}
